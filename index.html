@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/04a7566a39.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="color: white;">
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" class="logo" style="width: 15%;height: 45;">
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+      </nav>
+      <div class="header-text">
+        <p style="margin-top: 10%; font-size: 20px;">B.Tech Student at MIT-AOE</p>
+        <h1 style="margin-top: 40px; font-size: 30px; text-align: center; text-align: left; margin-bottom: 20%;">Hi, I
+          am
+          <span>Laksh Pacholy</span>, <br> pursuing BTech at MIT-AOE
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- about section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutC1">
+          <img src="background.jpg">
+        </div>
+        <div class="aboutC2">
+          <h1 class="sub-title">About me</h1>
+          <p>Hi there!, I am Laksh Pacholy a first year Engineering student at MIT-AOE.
+            Also I am very passionate about the web development, to be precise I like
+            the frontend development more. I have participated in a number of projects in
+            college. Other than this I have learned DSA in Java.
+            In my free time, I like to read spiritual books for increasing my focus and
+            calmness. I am always eager to collaborate on new and exciting projects! To know
+            more about my skills you can look into my resume.
+          </p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Frontend Developer</span><br>To design websites</li>
+              <li><span>Web development in Linux </span><br>To design websites in Linux</li>
+              <li><span>DSA in Java</span></li>
+              <li><span>C language</span><br>A very basic language through which we start our coding journey</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>Experience</span><br>Looking forward to working on creative projects</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2021</span><br>Completed my 10<sup>th</sup> with 93.2%</li>
+              <li><span>2023</span><br>Completed my 12<sup>th</sup> with 81%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web development</h2>
+          <p>As I have mentioned earlier that I have special interest in web-development
+            There are some projects made by me.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-linux"></i>
+          <h2>Linux Web development</h2>
+          <p>In our first semester we have taught from linux file handling till server
+            creation there I got pretty familiar with coding in Linux.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Java programmer</h2>
+          <p>This is something which learned before coming to the college.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project section similar to services -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="projects-list">
+        <div>
+          <img src="download (1).jpeg" alt="Project Image">
+          <h2>Government Jobs Website</h2>
+          <p>Recently, my friends and I worked on a website that provides information and data on new government jobs in
+            Maharashtra to give easy accessibility to youth.</p>
+          <a href="https://github.com/lakshpacholy/Maha-rozgaar">Learn more</a>
+        </div>
+        <div>
+          <img src="project2.jpeg" alt="Project Image">
+          <h2>Guess the number game</h2>
+          <p>A python based game which generates random number for guessing.</p>
+          <a href="https://github.com/lakshpacholy/guess-the-number">Learn more</a>
+        </div>
+        <div>
+          <img src="th.jpeg" alt="Project Image">
+          <h2>Transportation website</h2>
+          <p>An government bus Transportation website for Uttrakhand bus Transportation service.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-envelope"></i>lakshpacholy28@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>9244307665</p>
+          <div class="socialmedia-link">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/lakshpacholy"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="CV.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Messages" placeholder="Your Messages" rows="6"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    // Toggle menu for mobile view
+    var menuBtn = document.getElementById("menu-btn");
+    var menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", function () {
+      menu.classList.toggle("show");
+    });
+  </script>
+</body>
+
+</html>
